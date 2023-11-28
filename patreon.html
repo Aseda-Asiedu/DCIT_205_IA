@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .support-section {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .support-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .support-button:hover {
+        background-color: #218838;
+    }
+
+    .benefits {
+        margin-top: 30px;
+    }
+
+    .benefit {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .benefit img {
+        width: 150px;
+        height: 80px;
+        margin-right: 15px;
+    }
+
+    .benefit-text {
+        flex: 1;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+        nav a {
+            float: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .benefit img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Form Styles */
+    form {
+        margin: 20px auto;
+        display: block;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .payment-options {
+        display: flex;
+        gap: 20px;
+    }
+
+    .payment-options label {
+        display: flex;
+        align-items: center;
+    }
+
+    .payment-options input {
+        margin-right: 15px;
+    }
+
+</style>
+
+
+    <title>Patreon Page</title>
+    <link rel="stylesheet" href="shyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,700;1,300;1,500;1,600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sus-header"> 
+        <nav>
+            <a href="trial.html"><img src="images/comScience_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <div class="icon"><i class="fa fa-times" onclick="hideMenu()"> </i></div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="">FACILITY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li>
+                        <a href="">MORE</a>
+                        <ul class="dropdown">
+                            <li><a href="events.html">EVENTS</a></li>
+                            <li><a href="alumni.html">ALUMNI</a></li>
+                            <li><a href="">LEADERSHIP</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="patreon.html">PATREON</a></li>
+                        </ul>
+                        </li>
+                </ul>
+            </div>
+            <div class="icon"><i class="fa fa-bars" onclick="showMenu()"></i></div>
+        </nav>
+        <h1>Your Charity</h1>
+        <p>Supporting a Cause</p>
+    </section>
+   <!----------Patreon--------->
+  <section>
+    <div class="container">
+        <div class="support-section">
+            <h2>Support Us</h2>
+            <p>Help us make a difference!</p>
+        </div>
+
+        <div class="benefits">
+            <h2>Benefits of Supporting Us</h2>
+            <div class="benefit">
+                <img src="images/impact.jpg" alt="Benefit Icon">
+                <div class="benefit-text">
+                    <h3>Impactful Projects</h3>
+                    <p>Your support goes directly to impactful projects that make a difference in people's lives.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <img src="images/commu.jpg" alt="Benefit Icon">
+                <div class="benefit-text">
+                    <h3>Community Support</h3>
+                    <p>Join a community of like-minded individuals who care about making the world a better place.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <img src="images/update.webp" alt="Benefit Icon">
+                <div class="benefit-text">
+                    <h3>Exclusive Updates</h3>
+                    <p>Receive exclusive updates and news about the projects you support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- User Data Input and Payment Options -->
+        <section>
+            <div class="contact-col">
+        <form>
+            <h2>Support Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" min="1" required>
+
+            <label for="payment">Payment Method:</label>
+            <div class="payment-options">
+                <label><input type="radio" name="payment" value="credit"> Credit Card</label>
+                <label><input type="radio" name="payment" value="Momo"> Momo</label>
+            </div>
+
+            <button type="submit" class="support-button">Submit</button>
+        </form>
+    </div>
+  </section>
+<!-----Footer Section-->
+<footer>
+<section class="footer">
+    <div class="footrow">
+        <div class="col">
+            <img src="images/uniis.png" class="logo">
+            <p>Thank You for Choosing Our Services, A Premier University Here To Serve The Needs Of Students. </p>
+        </div>
+        <div class="col">
+            <h3>Office <div class="animate"><span></span></div></h3>
+            <p> Legon Boundary, Accra</p>
+            <p>Accra,Ghana</p>
+            <p class="email-id">info@Ug.edu.gh</p>
+            <h4>+233 030 291 7640</h4>
+        </div>
+        <div class="col">
+            <h3> Links <div class="animate"><span></span></div></h3>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="">COURSES OFFERED</a></li>
+                <li><a href="patreon.html">PATREON PAGE</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Newsletter <div class="animate"><span></span></div></h3>
+            <form>
+                <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                <input type="email" placeholder="Enter your email id" required>
+                <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            </form>
+            <div class="social-icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<p class="copyright">UG CS Department© 2023-All rights reserved</p>
+</footer>
+
+<!----------Javascript For Menu---------->
+<script>
+    var navLinks=document.getElementById("navLinks"); 
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
