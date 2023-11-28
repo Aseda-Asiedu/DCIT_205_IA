@@ -309,6 +309,37 @@ ul li:hover ul.dropdown {
      }
 
     /* --------Facilities-------*/
+    .face-col{
+            height: 200vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/facility.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+    }
+    .face-col h1 {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange; /* The typwriter cursor */
+            white-space: pre; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em; /* Adjust as needed */
+            animation: 
+              typing 3.5s steps(40, end),
+              blink-caret .75s step-end infinite;
+          }
+          
+          /* The typing effect */
+          @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+          }
+          
+          /* The typewriter cursor effect */
+          @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+          }
     .facilities{
         width: 80%;
         margin: auto;
@@ -405,6 +436,21 @@ ul li:hover ul.dropdown {
     color: #fff;
 }
 .sus-header h1 {
+    margin-top: 100px;
+}
+
+/*-------Leadership Page--------*/
+.lead{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/lead.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+}
+.lead h1 {
     margin-top: 100px;
 }
 /*------About US-----*/

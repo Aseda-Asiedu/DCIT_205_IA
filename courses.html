@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UPCOMING EVENTS</title>
+    <title>COURSES</title>
     <link rel="stylesheet" href="cont.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section class="events"> 
+    <section class="cours-col"> 
         <nav>
             <a href="trial.html"><img src="images/comScience_logo.png"></a>
             <div class="nav-links" id="navLinks">
@@ -37,48 +37,104 @@
             </div>
             <div class="icon"><i class="fa fa-bars" onclick="showMenu()"></i></div>
         </nav>
-       <h1> EVENTS</h1>
+       <h1> COURSE CATALOG</h1>
     </section>
-   <!----------Events--------->
-    <section class="events-col">
-        <div class="media_container">
-            <div class="image-overlay">
-                <p class="image-text">
-                </p>
+   <!----------Courses--------->
+   <div class="media_container">
+    <div class="image-overlay">
+        <p class="image-text">
+            Catalog
+        </p>
+    </div>
+    
+<div class="secondary">
+    <h1>Short Courses Offered</h1>
+</div>    
+<div class="flips">
+    <div class="flip-container">
+        <div class="ext-front-view">
+            <div class="ext-cover">
+                <img src="images/WebDev.png" class="profile" alt="shortcourses" width="300" height="200">
             </div>
-            <img src="images/even.jpg" alt="Events" id="bg-image" style="object-fit: cover; width: 100%; margin-top: 20%;">
+            <div class="ext-course-title">Introduction to Web Programming</div>
+            Programming, often referred to as coding, is the art and science of instructing computers to perform specific tasks. It is the fundamental language that empowers us to interact with and manipulate technology.
             
         </div>
+    </div>
 
-        <div class="text-col">
-            <h1>
-                Upcoming Events
-            </h1>
-            <p>SORRY THERE ARE NO CURRENT UPCOMING EVENTS</p>
-
-            <h1>Past Events</h1>
+    <div class="flip-container">
+        <div class="ext-front-view">
+            <div class="ext-cover">
+                <img src="images/CCNA.png" class="profile" alt="shortcourses" width="300" height="200">
+            </div>
+        <div class="ext-course-title">Computer Network Fundamental [CCNA]</div>
+        CCNA, or Cisco Certified Network Associate, serves as a gateway to the vast and intricate world of networking. It is a certification program offered by Cisco, a global leader in networking technology.
         </div>
+    </div>
 
-        <div class="flips" style="margin-left: -10%;">
-            <div class="flip-container" style="margin-left: 10%;">
-                    <div class="mod">
-                        <img src="images/event1.jpeg" class="profile2" alt="Past Event 1" width="500" height="350">
-                    </div>
+    <div class="flip-container">
+        <div class="ext-front-view">
+            <div class="ext-cover">
+                <img src="images/Cyber.jpg" class="profile" alt="shortcourses" width="300" height="200">
             </div>
-
-            <div class="flip-container" style="margin-left: 10%;">
-                    <div class="mod">
-                        <img src="images/event2.jpg" class="profile2" alt="Past Event 1" width="500" height="350">
-                    </div>
-            </div>
-            
-            <div class="flip-container" style="margin-left: 10%;">
-                <div class="mod">
-                    <img src="images/event3.jpeg" class="profile2" alt="Past Event 1" width="500" height="350">
-                </div>
-            </div>
+        <div class="ext-course-title">Information Security and Ethical Hacking</div>
+        Information Security focuses on the protection of sensitive information from unauthorized access, ensuring confidentiality, integrity, and availability.
         </div>
-    </section>
+    </div>
+
+    <div class="flip-container">
+        <div class="ext-front-view">
+            <div class="ext-cover">
+                <img src="images/MobileDev.jpg" class="profile" alt="shortcourses" width="300" height="200">
+            </div>
+        <div class="ext-course-title">Mobile Application Development</div>
+        </div>
+    </div>
+</div>
+
+<div class="secondary">
+    <h1>General Courses Offered</h1>
+</div>
+
+<div class="flips">
+    <div class="flip-container">
+        <div class="ext-front-view">
+            <div class="ext-cover">
+                <img src="images/WebDev.png" class="profile" alt="shortcourses" width="300" height="200">
+            </div>
+        <div class="ext-course-title">Introduction to Web Programming</div>
+        </div>
+    </div>
+
+    <div class="flip-container">
+        <div class="ext-front-view">
+            <div class="ext-cover">
+                <img src="images/CCNA.png" class="profile" alt="shortcourses" width="300" height="200">
+            </div>
+        <div class="ext-course-title">Computer Network Fundamental [CCNA]</div>
+        </div>
+    </div>
+
+    <div class="flip-container">
+        <div class="ext-front-view">
+            <div class="ext-cover">
+                <img src="images/Cyber.jpg" class="profile" alt="shortcourses" width="300" height="200">
+            </div>
+        <div class="ext-course-title">Information Security and Ethical Hacking</div>
+        </div>
+    </div>
+
+    <div class="flip-container">
+        <div class="ext-front-view">
+            <div class="ext-cover">
+                <img src="images/MobileDev.jpg" class="profile" alt="shortcourses" width="300" height="200">
+            </div>
+        <div class="ext-course-title">Mobile Application Development</div>
+        </div>
+    </div>
+</div>
+</div>
+
 <!-----Footer Section-->
 <footer>
 <section class="footer">
@@ -99,7 +155,7 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="courses.html">COURSES OFFERED</a></li>
+                    <li><a href="">COURSES OFFERED</a></li>
                     <li><a href="patreon.html">PATREON PAGE</a></li>
             </ul>
         </div>
